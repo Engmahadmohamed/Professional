@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Image Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Professional Image Tools</div>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>Professional Image Tools</h1>
+            <p>Remove backgrounds and access premium Freepik photos with ease</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="services" class="tools-section">
+            <div class="tool-card remove-bg">
+                <h2>Remove Background</h2>
+                <div class="upload-area" id="removeBgUpload">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & Drop or Click to Upload</p>
+                    <input type="file" id="removeBgInput" accept="image/*" hidden>
+                </div>
+                <div class="result-area" id="removeBgResult" hidden>
+                    <img id="processedImage" alt="Processed Image">
+                    <button class="download-btn">Download</button>
+                </div>
+            </div>
+
+            <div class="tool-card freepik">
+                <h2>Freepik Photos</h2>
+                <div class="search-box">
+                    <input type="text" placeholder="Search photos..." id="searchInput">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="photos-grid" id="photosGrid"></div>
+                <div class="load-more">
+                    <button id="loadMoreBtn">Load More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>Professional Image Tools provides professional image editing tools and premium Freepik photo access to help you create stunning visual content. Our services are designed to be user-friendly and efficient.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: info@ProfessionalImageTools.com</p>
+                <p><i class="fas fa-phone"></i> Phone: +252 61 XXX XXXX</p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: Mogadishu, Somalia</p>
+            </div>
+        </section>
+
+        <section class="ad-section">
+            <h2>Advertisement</h2>
+            <div class="ad-space">
+                <!-- Ad content will be inserted here -->
+                <div class="ad-placeholder">
+                    <i class="fas fa-ad"></i>
+                    <p>Advertisement Space</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Professional Image Tools. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
